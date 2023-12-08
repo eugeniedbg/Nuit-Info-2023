@@ -22,12 +22,12 @@ const Jeux = (props) => {
             const intervalId = setInterval(() => {
                 const numero = Math.floor(Math.random() * 20) + 1; // numéro aléatoire entre 1 et 20
 
-                fetch(`http://nuitinfoscala.osc-fr1.scalingo.io/api/item/id/${numero}`, {
+                fetch(`https://nuitinfoscala.osc-fr1.scalingo.io/api/item/id/${numero}`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
                         'Accept': 'application/json',
-                        'Host': 'https://localhost:3001'
+                        'Host': 'https://cleanmate-change.vercel.app/'
                     }
                 })
                     .then(response => response.json())
