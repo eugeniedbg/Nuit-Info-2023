@@ -1,0 +1,41 @@
+@import '../../styles/abstract/variables.module.scss';
+
+.informationsPage {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pageTitle {
+  color: $darkColor;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pageText {
+    color: $textColor;
+    margin-bottom: 40px;
+  
+    strong {
+      font-weight: bold;
+    }
+  
+    // Ajouter des styles spécifiques pour les parties en gras
+    .impactTitle {
+      font-weight: bold;
+    }
+  
+    // Ajouter des styles spécifiques pour les retours à la ligne
+    .lineBreak {
+      display: block;
+      margin-bottom: 1em; // Ajuster la marge selon votre préférence
+    }
+  }
+
+.itemsList {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+// Styles spécifiques pour le composant CardItem peuvent être ajoutés ici si nécessaire

@@ -1,0 +1,40 @@
+#boxScoreBar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    width: 100%;
+}
+
+#boxScore {
+    width: 180px;
+    display: flex;
+    justify-content: center;
+}
+
+#boxProgressBarAndText {
+    width: 100%;
+}
+
+#textUnderProgressBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#boxTypoNeutralite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Small devices (phones, 700px and down) */
+@media only screen and (max-width: 700px) {
+    .typoUnderProgressBar {
+        display: none;
+    }
+
+    #boxScoreBar {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px 0 10px;
+    }
+}

@@ -1,0 +1,34 @@
+$textColor: #000000;
+$primaryColor: #6f9600;
+$secondaryColor: #96B8E3;
+$accentColor1: #002663;
+$accentColor2: #8769D7;
+$darkColor: #0D1F0D;
+$greyColor: #6C756C;
+$whiteColor: #EBF5EB;
+
+$earthWidth: 120;
+
+$breakpointXS: 480px;
+$breakpointSM: 600px;
+$breakpointMD: 900px;
+$breakpointLG: 1200px;
+$breakpointXL: 1536px;
+
+:export {
+  textColor: $textColor;
+  primaryColor: $primaryColor;
+  secondaryColor: $secondaryColor;
+  accentColor1: $accentColor1;
+  accentColor2: $accentColor2;
+  darkColor: $darkColor;
+  greyColor: $greyColor;
+  whiteColor: $whiteColor;
+  breakpointXS: $breakpointXS;
+  breakpointSM: $breakpointSM;
+  breakpointMD: $breakpointMD;
+  breakpointLG: $breakpointLG;
+  breakpointXL: $breakpointXL;
+  earthWidth: $earthWidth;
+}
+

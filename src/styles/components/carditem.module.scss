@@ -1,0 +1,46 @@
+@import '../../styles/abstract/variables.module.scss';
+
+.card {
+  background-color: $whiteColor; // Exemple d'utilisation de la couleur blanche depuis les variables
+  // Ajoute d'autres styles au besoin
+}
+
+.cardImage {
+    width: 100%;
+    height: auto;
+    max-width: 180px; // Ajuste la largeur maximale selon tes besoins
+    display: block;
+    margin: 10px auto 0; // Ajoute une marge en haut de 10px, centre l'image horizontalement
+}
+
+.cardTitle {
+  color: $primaryColor; // Exemple d'utilisation de la couleur primaire depuis les variables
+  font-size: 2em; // Ajuste la taille du titre selon tes besoins
+  // Ajoute d'autres styles au besoin
+}
+
+.cardScore {
+  font-weight: bold; // Texte en gras
+  // Ajoute d'autres styles au besoin
+}
+
+.cardDescription {
+  // Styles pour la description
+  color: $textColor; // Exemple d'utilisation de la couleur de texte depuis les variables
+}
+
+
+.diagonalBannerContainer {
+    width: 100%;
+    height: 50px;
+    background-color: red;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.typoDiagonalBannerContainer {
+    color: white; /* Couleur du texte à l'intérieur du bandeau */
+    margin: 0;
+}

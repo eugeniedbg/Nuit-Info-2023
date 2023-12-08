@@ -1,0 +1,47 @@
+.FallenObjet{
+    transition: 0.1s ease-out;
+    transform: rotate(90);
+}
+
+
+.boxTopGame {
+    display: flex;
+    height: 20vh;
+    align-items: center;
+}
+
+.boxGame {
+    // margin: auto;
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+    width: 100%;
+    background-color: lightblue;
+}
+
+.containerGame {
+    // display: flex;
+}
+
+
+#boxScore {
+    display: flex;
+    align-items: center;
+}
+
+#typoScore {
+    margin-left: 10px;
+}
+
+#titleDialog, #boxScore {
+    display: flex;
+    justify-content: center;
+}
+
+#textContentDialog {
+    max-width: 400px;
+}
+
+#dialogActions {
+    justify-content: center;
+}

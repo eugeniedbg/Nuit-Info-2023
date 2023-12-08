@@ -1,0 +1,181 @@
+/* intropopup.module.scss */
+
+h1 {
+    font-size: 4vw;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 2vw;
+    font-weight: 500;
+    margin: 1vw;
+}
+
+button {
+    background-color: #66c4fa;
+    border: 1px solid #000;
+    border-radius: 30px;
+    padding: 1vw 2vw;
+    font-size: 1.5vw;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.popup {
+    z-index: 1000;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 429px) {
+        h1 {
+            font-size: 150%;
+        }  
+
+        p {
+            font-size: 150%;
+            margin: 1vw;
+        }
+
+        button {
+            padding: 3vw 5vw;
+            font-size: 4vw;
+        }
+    }
+
+    @media (min-width: 430px) {
+
+        h1 {
+            font-size: 150%;
+        }
+
+        p {
+            font-size: 200%;
+            margin: 2vw;
+        }
+
+        button {
+            padding: 2vw 4vw;
+            font-size: 3vw;
+        }
+    }
+
+    @media (min-width: 901px) {
+        h1 {
+            font-size: 150%; /* Taille normale pour les écrans plus larges */
+        }
+
+        p {
+            font-size: 125%; /* Taille normale pour les écrans plus larges */
+            margin: 1rem; /* Ajoutez une marge normale pour les écrans plus larges */
+        }
+
+        button {
+            padding: 0.5rem 1rem; /* Taille normale pour les écrans plus larges */
+            font-size: 1rem; /* Taille normale pour les écrans plus larges */
+        }
+        
+    }
+}
+
+
+.popupContent {
+    
+    background-color: #fff;
+    padding: 5vw;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Stack les éléments en colonne pour les petits écrans */
+    align-items: center; /* Centre les éléments horizontalement */
+
+    @media (max-width: 549px) {
+        max-width: 80%; /* Ajuste la largeur maximale pour prendre toute la largeur de l'écran */
+        min-height: 80%; /* Ajuste la hauteur maximale pour prendre toute la hauteur de l'écran */
+        flex-direction: column; /* Stack les éléments en colonne pour les petits écrans */
+        align-items: center; /* Centre les éléments horizontalement */
+
+        h1 {
+            font-size: 110%;
+        }  
+
+        p {
+            font-size: 105%;
+            margin: 1vw;
+        }
+
+        button {
+            padding: 2vw 3vw;
+            font-size: 3vw;
+        }
+    }
+
+    @media (min-width: 550px) and (max-width: 950px) {
+        max-width: 80%; /* Ajuste la largeur maximale pour prendre toute la largeur de l'écran */
+        max-height: 80%; /* Ajuste la hauteur maximale pour prendre toute la hauteur de l'écran */
+        flex-direction: column; /* Stack les éléments en colonne pour les petits écrans */
+        align-items: center; /* Centre les éléments horizontalement */
+
+        h1 {
+            font-size: 125%;
+        }
+
+        p {
+            font-size: 120%;
+            margin: 2vw;
+        }
+
+        button {
+            padding: 1vw 3vw;
+            font-size: 1.5vw;
+        }
+    
+    }
+
+    @media (min-width: 951px) {
+        max-width: 60%;
+        max-height: 60%;
+        flex-direction: column; /* Stack les éléments en colonne pour les petits écrans */
+        align-items: center; /* Centre les éléments horizontalement */
+
+        h1 {
+            font-size: 140%; /* Taille normale pour les écrans plus larges */
+        }
+
+        p {
+            font-size: 135%; /* Taille normale pour les écrans plus larges */
+            margin: 1rem; /* Ajoutez une marge normale pour les écrans plus larges */
+        }
+
+        button {
+            padding: 0.5rem 1rem; /* Taille normale pour les écrans plus larges */
+            font-size: 1rem; /* Taille normale pour les écrans plus larges */
+        }
+
+    }
+
+    width: 100%;
+}
+
+.close {
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+.visible {
+    display: flex;
+}
+
+
