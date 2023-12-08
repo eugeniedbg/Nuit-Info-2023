@@ -181,7 +181,7 @@ const Jeux = (props) => {
                             <Typography id={styles.typoScore} variant="h1" color="red">{score}</Typography>
                         )}
                     </Box>
-                    <Typography id={styles.textContentDialog} variant="body1" color="black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut feugiat sem, ac lacinia arcu. Fusce non felis nunc. Aenean in molestie urna, at bibendum sapien. Curabitur nec turpis id est lobortis tempus.</Typography>
+                    
                 </DialogContent>
                 <DialogActions id={styles.dialogActions}>
                     <Button variant='contained' color='grey' onClick={handleRejouer}>Rejouer</Button>
